@@ -16,7 +16,6 @@ html, body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: #FFFFFF;
     height: 293px;
     padding-left: 50px;
@@ -26,7 +25,7 @@ header {
 .header__logo {
     width: 148px;
     height: 105px;
-    top: 92px;
+    margin-top: 92px;
     margin-right: auto;
 }
 
@@ -34,29 +33,50 @@ header {
     display: flex;
     align-items: center;
     list-style: circle;
-    gap: 32px;
+    gap: 31.5px;
     padding: 0;
+    margin-top: 133px;
     margin-right: 36.5px;
     text-underline-offset: 4px;
     font-size: 18px;
 }
 
-nav ul li a:hover {
+.header__links-list-item {
+    height: 22px;
+}
+
+.header__links-list-item:first-child {
+    list-style: none;
+}
+
+.header__links-list-item:not(:first-child) {
+    padding-right: 3px;
+}
+
+
+.header__link:active {
+    text-decoration: none;
+}
+
+.header__link:hover {
     text-decoration: none;
 }
 
 .header__address {
     font-style: normal;
     width: 240px;
-    all: unset;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 250px;
     justify-self: end;
-    gap: 1px;
     font-size: 18px;
+    line-height: 24.3px;
     text-underline-offset: 3px;
+    margin-top: 95px;
+}
+
+.header__street {
+    margin-top: 1px;
 }
 
 /* COVER */
