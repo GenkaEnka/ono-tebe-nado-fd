@@ -3,13 +3,13 @@ html {
 }
 
 body {
-    /* margin: 0; */
     font-family: 'Raleway', Arial, sans-serif;
     color: #222222;
+    margin: 0;
 }
 
-header, main, footer, section {
-    margin: 0 auto;
+html, body {
+  overflow-x: hidden;
 }
 
 /* HEADER */
@@ -179,7 +179,7 @@ nav ul li a:hover {
 
 .lost__card-list-item {
     height: 596px;
-    width: 334px;
+    max-width: 334px;
 }
 
 .card-link {
