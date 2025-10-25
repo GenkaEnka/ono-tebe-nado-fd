@@ -16,7 +16,6 @@ html, body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: #FFFFFF;
     height: 293px;
     padding-left: 50px;
@@ -26,7 +25,7 @@ header {
 .header__logo {
     width: 148px;
     height: 105px;
-    top: 92px;
+    margin-top: 92px;
     margin-right: auto;
 }
 
@@ -34,29 +33,50 @@ header {
     display: flex;
     align-items: center;
     list-style: circle;
-    gap: 32px;
+    gap: 31.5px;
     padding: 0;
+    margin-top: 133px;
     margin-right: 36.5px;
     text-underline-offset: 4px;
     font-size: 18px;
 }
 
-nav ul li a:hover {
+.header__links-list-item {
+    height: 22px;
+}
+
+.header__links-list-item:first-child {
+    list-style: none;
+}
+
+.header__links-list-item:not(:first-child) {
+    padding-right: 3px;
+}
+
+
+.header__link:active {
+    text-decoration: none;
+}
+
+.header__link:hover {
     text-decoration: none;
 }
 
 .header__address {
     font-style: normal;
     width: 240px;
-    all: unset;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 250px;
     justify-self: end;
-    gap: 1px;
     font-size: 18px;
+    line-height: 24.3px;
     text-underline-offset: 3px;
+    margin-top: 96px;
+}
+
+.header__street {
+    margin-top: 0px;
 }
 
 /* COVER */
@@ -64,13 +84,13 @@ nav ul li a:hover {
 .cover {
     position: relative;
     height: 757px;
-    padding: 165px 50px 50px 50px;
+    padding: 165px 0 50px 0;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    margin-bottom: 180px;
+    margin-bottom: 184px;
 }
 
 .overlay {
@@ -95,6 +115,7 @@ nav ul li a:hover {
     font-size: 100px;
     line-height: 1.15;
     text-transform: uppercase;
+    margin-bottom: 106px;
 }
 
 .spaced {
@@ -105,19 +126,21 @@ nav ul li a:hover {
     display: flex;
     justify-content: start;
     align-items: flex-start;
+    padding-left: 50px;
 }
 
 .aligned-text_center {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 30px;
 }
 
 .aligned-text_right {
     display: flex;
     justify-content: end;
     align-items: flex-end;
-    margin-right: -0.4em;
+    padding-right: 20px;
 }
 
 .cover__description {
@@ -126,8 +149,8 @@ nav ul li a:hover {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 78px;
-    padding: 106px 0 0 0;
+    gap: 101px;
+    padding-right: 50px;
 }
 
 .cover__description-text {
@@ -135,7 +158,10 @@ nav ul li a:hover {
     font-size: 22px;
     line-height: 1.27;
     text-transform: uppercase;
-    word-spacing: 18px;
+    word-spacing: 0.835em;
+    padding-top: 1px;
+    padding-right: 6px;
+
 }
 
 .bet-button {
@@ -148,6 +174,7 @@ nav ul li a:hover {
     line-height: 1;
     text-transform: uppercase;
     background-color: transparent;
+    
 }
 
 .bet-button:hover {
@@ -159,7 +186,7 @@ nav ul li a:hover {
 
 .lots {
     padding: 0 24px;
-    margin-bottom: 120px;
+    margin-bottom: 155px;
 }
 
 .lots__heading {
@@ -231,7 +258,7 @@ nav ul li a:hover {
     line-height: 1.2;
     text-decoration-line: underline;
     text-transform: uppercase;
-    text-underline-offset: 4px;
+    text-underline-offset: 2px;
 }
 
 .card__text {
@@ -258,7 +285,7 @@ nav ul li a:hover {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 24px;
     padding: 0 24px;
-    margin-bottom: 180px;
+    margin-bottom: 181px;
 }
 
 .about__column {
@@ -285,7 +312,7 @@ nav ul li a:hover {
 }
 
 .about__title {
-    padding: 100px 0 104px;
+    padding: 104px 0 103px;
     font-weight: bold;
     font-size: 40px;
     line-height: 1;
@@ -298,6 +325,14 @@ nav ul li a:hover {
     gap: 25px;
     font-size: 20px;
     line-height: normal;
+}
+
+.about__text_first {
+    padding-right: 5px;
+}
+
+.about__text_second {
+    margin-right: 0px;
 }
 
 /* FOOTER */
@@ -316,9 +351,14 @@ nav ul li a:hover {
     align-items: flex-start;
     max-width: 250px;
     justify-self: end;
-    gap: 1px;
+    gap: 3.5px;
     font-size: 18px;
-    text-underline-offset: 3px;
+    text-underline-offset: 4px;
+}
+
+.footer__street {
+    padding-bottom: 0px;
+    line-height: 23px;
 }
 
 .footer__social-icon {
@@ -329,6 +369,7 @@ nav ul li a:hover {
 .footer__menu-list {
     text-align: center;
     list-style: none;
+    padding-right: 10px;
 }
 
 .footer__menu-link {
